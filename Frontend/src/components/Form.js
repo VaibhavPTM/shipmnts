@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
-import Papa from "papaparse";
 import { baseUrl } from "../baseUrl";
 
 const UploadForm = () => {
