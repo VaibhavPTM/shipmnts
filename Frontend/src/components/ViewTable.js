@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { baseUrl } from "../baseUrl";
+import moment from "moment";
 
 const ViewTable = () => {
   const [viewType, setViewType] = useState(null);
@@ -55,7 +56,7 @@ const ViewTable = () => {
                 <tr key={index}>
                   <td className="border px-4 py-2">{author.name}</td>
                   <td className="border px-4 py-2">{author.email}</td>
-                  <td className="border px-4 py-2">{author.dob}</td>
+                  <td className="border px-4 py-2">{moment(author.dob).format('MMMM Do YYYY')}</td>
                 </tr>
               ))}
             </tbody>
