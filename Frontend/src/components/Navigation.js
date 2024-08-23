@@ -7,8 +7,13 @@ const Navigation = () => {
 
           <ul className="hidden md:flex space-x-6">
             <li>
-              <a href="#home" className="text-white hover:text-gray-300">
+              <a href="/" className="text-white hover:text-gray-300">
                 Home
+              </a>
+            </li>
+            <li>
+              <a href="/view" className="text-white hover:text-gray-300">
+                View
               </a>
             </li>
           </ul>
